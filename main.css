@@ -1,0 +1,56 @@
+
+
+.title{
+    padding: 10px;
+    color: white;
+    background-color: maroon;
+
+}
+
+
+
+
+.row{
+    padding-right:50px;
+    padding-left: 50px;
+    padding-top: 20px;
+}
+
+.grid {
+    display: flex;
+
+    justify-content: space-around;
+
+}
+
+img {
+    float: left;
+    width: 700px;
+    height: 500px;
+}
+
+.site-pointer{
+    display: grid;
+
+    background-color: rgb(17, 16, 16);
+    padding: 10px 25px;
+    position: absolute;
+    top: 37%;
+    color: azure;
+    border: none;
+    border-radius: 5px;
+    font-size: larger;
+}
+
+.grid .site-pointer:hover{
+    background-color: blue;
+}
+
+
+
+
+.swig  .img-fluid {
+    border: 5px solid;
+    border-color: black;
+}
+

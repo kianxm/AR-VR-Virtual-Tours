@@ -2,17 +2,37 @@
 <html>
   <head>
     <script src='https://static.matterport.com/showcase-sdk/latest.js'></script>
+    <link rel="stylesheet" href="main.css">
+
   </head>
   <body>
     <div class="container">
+      <nav>
+        <ul>
+
+        </ul>
+      </nav>
+      <h1 class="title">SCU Campus Housing Interactive VR Tours</h1>
       <div class="row"> <!-- flex -->
         <div class="col1">
           <main id="content">
             <div class="grid"><!-- flex -->
-              <div ckass="HCI Lab">
+              <div class="Swig">
                 <a href="/HCI-room.html" class="site" >
                   <img src="/swig.png" class="img-fluid">
-                  <span class="site-pointer"> HCI Lab</span>
+                  <span class="site-pointer"> Swig</span>
+                </a>
+              </div>
+              <div class="finn">
+                <a href="/HCI-room.html" class="site" >
+                  <img src="/finn.jpg" class="img-fluid">
+                  <span class="site-pointer"> Finn Hall</span>
+                </a>
+              </div>
+              <div class="lib">
+                <a href="/HCI-room.html" class="site" >
+                  <img src="/lib.jpg" class="img-fluid">
+                  <span class="site-pointer"> The Lib</span>
                 </a>
               </div>
             </div>
@@ -22,36 +42,7 @@
     </div>
 
 
-    <script>
-      (async function connectSdk() {
-        const sdkKey = 'cq2izzptb9xut1ddc1dy7cz0a'; 
-        const iframe = document.getElementById('showcase-iframe');
-
-        // connect the sdk; log an error and stop if there were any connection issues
-        try {
-          const mpSdk = await window.MP_SDK.connect(
-            iframe, // Obtained earlier
-            sdkKey, // Your SDK key
-            '' // Unused but needs to be a valid string
-          );
-          onShowcaseConnect(mpSdk);
-        } catch (e) {
-          console.error(e);
-        }
-      })();
-
-      async function onShowcaseConnect(mpSdk) {
-        // insert your sdk code here. See the ref https://matterport.github.io/showcase-sdk//docs/reference/current/index.html
-
-        // try retrieving the model data and log the model's sid
-        try {
-          const modelData = await mpSdk.Model.getData();
-          console.log('Model sid:' + modelData.sid);
-        } catch (e) {
-          console.error(e);
-        }
-      }
-    </script>
+   
 
 
   <body>
