@@ -54,3 +54,10 @@ img {
     border-color: black;
 }
 
+
+.footer {
+    display: block;
+    text-align: center;
+    background-color: maroon;
+    color: white;
+}
