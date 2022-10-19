@@ -1,50 +1,43 @@
-<<<<<<< HEAD
-<!-- https://my.matterport.com/show?m=SxQL3iGyoDo&play=1&applicationKey=cq2izzptb9xut1ddc1dy7cz0a -->
-=======
->>>>>>> origin/main
-<html>
-  <head>
-    <script src='https://static.matterport.com/showcase-sdk/latest.js'></script>
-  </head>
-  <body>
-    <iframe 
-      width='853' 
-      height='480' 
-      src='https://my.matterport.com/show/?m=qQ2snFAvufG' 
-      frameborder='0' 
-      allowfullscreen 
-      allow='xr-spatial-tracking'>
-    </iframe>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="main.css">
+	<title>Document</title>
+</head>
+<body>
+	<div class="card">
+		<div class="card-container">
+			<h4><b>Swig Hall</b>
+			<img src="swig.png" style="width: 100%">
+		</div>
 
-    <script>
-      (async function connectSdk() {
-        const sdkKey = 'cq2izzptb9xut1ddc1dy7cz0a'; 
-        const iframe = document.getElementById('showcase-iframe');
+		<button id="open">
+			Enter
+		</button>
 
-        // connect the sdk; log an error and stop if there were any connection issues
-        try {
-          const mpSdk = await window.MP_SDK.connect(
-            iframe, // Obtained earlier
-            sdkKey, // Your SDK key
-            '' // Unused but needs to be a valid string
-          );
-          onShowcaseConnect(mpSdk);
-        } catch (e) {
-          console.error(e);
-        }
-      })();
+	</div>
 
-      async function onShowcaseConnect(mpSdk) {
-        // insert your sdk code here. See the ref https://matterport.github.io/showcase-sdk//docs/reference/current/index.html
+	<div class="modal-container" id="modal-container">
+		<div class="modal">
+			<h1>Swig Hall</h1>
+			<iframe 
+				width='426.5' 
+				height='240' 
+				src='https://my.matterport.com/show/?m=1L15TmgCJLa' 
+				frameborder='0' 
+				allowfullscreen 
+				allow='xr-spatial-tracking'>
+			</iframe>
+			<button id="close">
+				Close me
+			</button>
+		</div>
+	</div>
 
-        // try retrieving the model data and log the model's sid
-        try {
-          const modelData = await mpSdk.Model.getData();
-          console.log('Model sid:' + modelData.sid);
-        } catch (e) {
-          console.error(e);
-        }
-      }
-    </script>
-  <body>
+	<script src="script.js"></script>
+
+</body>
 </html>
