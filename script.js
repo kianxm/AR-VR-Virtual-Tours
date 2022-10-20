@@ -1,7 +1,11 @@
-document.getElementById('open').addEventListener('click', () => {
-    document.querySelector('.modal-container').style.display = 'flex';
-})
+const modalBtn = document.querySelector('.modal-btn');
+const modalBg = document.querySelector('.modal-container');
+const modalClose = document.querySelector('.modal-close');
 
-document.getElementById('close').addEventListener('click', () => {
-    document.querySelector('.modal-container').style.display = 'none';
-})
+modalBtn.addEventListener('click', () => {
+    modalBg.classList.add('modal-active');
+});
+
+modalClose.addEventListener('click', () => {
+    modalBg.classList.remove('modal-active');
+});

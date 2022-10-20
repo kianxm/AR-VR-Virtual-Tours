@@ -8,31 +8,38 @@
 	<title>Document</title>
 </head>
 <body>
+	<div class="hero-image">
+		<div class="hero-text">
+			<h1>SCU</h1>
+			<h2>Virtual Tours</h2>
+			<p>This is where the subtitle will go.</p>
+			<button>View dorms</button>
+		</div>
+	</div>
+
+
+
 	<div class="card">
 		<div class="card-container">
-			<h4><b>Swig Hall</b>
+			<h4><b>Broccoli</b>
 			<img src="swig.png" style="width: 100%">
 		</div>
-
-		<button id="open">
-			Enter
-		</button>
-
+		<button class="modal-btn">Enter</button>
 	</div>
 
 	<div class="modal-container" id="modal-container">
 		<div class="modal">
-			<h1>Swig Hall</h1>
+			<h1>Broccoli</h1>
 			<iframe 
-				width='426.5' 
-				height='240' 
+				width='639.75' 
+				height='360' 
 				src='https://my.matterport.com/show/?m=1L15TmgCJLa' 
 				frameborder='0' 
 				allowfullscreen 
 				allow='xr-spatial-tracking'>
 			</iframe>
-			<button id="close">
-				Close me
+			<button class="modal-close">
+				X
 			</button>
 		</div>
 	</div>
