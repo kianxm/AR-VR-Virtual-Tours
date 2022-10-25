@@ -1,15 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
 * {
     box-sizing: border-box;
 }
 
 body {
-    background-color: #edeef6;
-    font-family: 'Poppins', sans-serif;
-    align-items: center;
-    justify-content: center;
-    
+    /* background-color: #edeef6; */
+    background-color: #ffffff;
+    font-family: 'Inter', sans-serif;
 }
 
 .hero-image {
@@ -25,13 +24,26 @@ body {
     color: #b30738;
 }
 
+.hero-text h1 {
+    font-size: 100px;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 2px 2px 4px #868686;
+    margin: -40px;
+}
+
 .hero-text h2 {
-    padding: 0px;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 2px 2px 4px #b6b6b6;
     color: black;
 }
 
 .hero-text p {
     color: black;
+    font-weight: 500;
+    margin: 20px;
 }
 
 .card {
@@ -42,7 +54,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
 
 .card:hover {
@@ -66,6 +77,22 @@ button {
     color: #fff;
     font-size: 14px;
     padding: 10px 25px;
+}
+
+button:hover {
+    background-color: #9c0630;
+}
+
+.grid-container {
+    display: grid;
+    gap: 50px;
+    justify-content: center;
+    margin: 800px;
+}
+
+.grid-container p {
+    grid-column-start: 1;
+    justify-self: start;
 }
 
 .modal-container {
