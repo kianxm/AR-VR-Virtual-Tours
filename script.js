@@ -1,4 +1,4 @@
-const modalBtn = document.querySelector('.modal-btn');
+const modalBtn = document.querySelector('.dorms-btn');
 const modalBg = document.querySelector('.modal-container');
 const modalClose = document.querySelector('.modal-close');
 

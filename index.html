@@ -4,48 +4,70 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="styles.css">
 	<title>Document</title>
 </head>
 <body>
-	<div class="hero-image">
-		<div class="hero-text">
-			<h1>SCU</h1>
-			<h2>Virtual Tours</h2>
-			<p>Created with state-of-the-art technology,<br>
-				you are now able to view college dorms<br>
-				in virtual reality with full control capabilities.</p>
-			<button>View dorms</button>
+	<!-- Hero Section -->
+	<div class="hero">
+		<div class="hero-container">
+			<h1 class="hero-heading">SCU</h1>
+			<h2 class="hero-subtitle">Virtual Tours</h1>
+			<p class="hero-description">Created with state-of-the-art technology,<br>
+										you are now able to view college dorms<br>
+										in virtual reality with full control capabilities.
+			</p>
+			<button class="main-btn"><a href="#">View dorms</a></button>
 		</div>
 	</div>
 
-	
-
-	<div class="grid-container">
-		<p>On-campus options:</p>
-
-		<div class="card">
-			<div class="card-container">
-				<h4><b>Broccoli</b>
-				<img src="swig.png" style="width: 100%">
+	<!-- On-campus Dorms -->
+	<div class="dorms" id="dorms">
+		<h1>On-campus dorm options:</h1>
+		<div class="dorms-wrapper">
+			<div class="dorms-card">
+				<h2><b>Broccoli</b></h2>
+				<div class="dorms-btn"><button>Enter</button></div>
 			</div>
-			<button class="modal-btn">Enter</button>
+			<div class="dorms-card">
+				<h2><b>Swig Hall</b></h2>
+				<div class="dorms-btn"><button>Enter</button></div>
+			</div>
+			<div class="dorms-card">
+				<h2><b>Dunne Hall</b></h2>
+				<div class="dorms-btn"><button>Enter</button></div>
+			</div>
+			<div class="dorms-card">
+				<h2><b>Graham Hall</b></h2>
+				<div class="dorms-btn"><button>Enter</button></div>
+			</div>
 		</div>
-		
-	
-		<div class="modal-container" id="modal-container">
-			<div class="modal">
-				<h1>Broccoli</h1>
-				<iframe 
-					src='https://my.treedis.com/tour/broccoli-demo' 
-					height='500' 
-					width='700' 
-					allowfullscreen>
-				</iframe>
-				<button class="modal-close">
-					X
-				</button>
+	</div>
+
+	<!-- Off-campus Dorms -->
+	<div class="dorms" id="dorms">
+		<h1>Off-campus dorm options:</h1>
+		<div class="dorms-wrapper">
+			<div class="dorms-card">
+				<h2><b>University Villas</b></h2>
+				<div class="dorms-btn"><button>Enter</button></div>
 			</div>
+		</div>
+	</div>
+
+	<!-- Modal Container -->
+	<div class="modal-container" id="modal-container">
+		<div class="modal">
+			<h1>Broccoli</h1>
+			<iframe 
+				src='https://my.treedis.com/tour/broccoli-demo' 
+				height='500' 
+				width='700' 
+				allowfullscreen>
+			</iframe>
+			<button class="modal-close">
+				X
+			</button>
 		</div>
 	</div>
 

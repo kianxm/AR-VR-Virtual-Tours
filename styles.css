@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+/* * {
+    box-sizing: border-box;
+} */
+
+body {
+    background-color: #ffffff;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #ffffff;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 90%;
+    text-align: center;
+    padding: 30px;
+    margin-top: 150px;
+}
+
+.hero-heading {
+    font-size: 100px;
+    margin-bottom: -30px;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 2px 2px 4px #868686;
+    color: #b30738;
+}
+
+.hero-subtitle {
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 2px 2px 4px #b6b6b6;
+    color: black;
+}
+
+.hero-description {
+    color: black;
+    font-weight: 500;
+    margin: 20px;
+}
+
+.main-btn {
+    background-color: #b30738;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 25px;
+    margin-bottom: 100px;
+}
+
+@media screen and (max-width: 768px) {
+    .hero-heading {
+        font-size: 60px;
+    }
+    .hero-subtitle {
+        font-size: 40px;
+    }
+    .hero-description  {
+        font-size: 20px;
+    }
+}
+
+/* On Campus Dorm Section */
+.dorms {
+    background: #dddddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 3rem 0;
+}
+
+.dorms h1 {
+    background-color: #ff8177;
+    background-image: linear-gradient(to right, #b30738, #dc5252, #b30738 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.dorms h2 {
+    color: black;
+    justify-content: center;
+    align-items: center;
+}
+
+.dorms-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.dorms-card {
+    margin: 10px;
+    height: 340px;
+    width: 300px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #000;
+    background-color: white;
+    transition: 0.3s ease-in;
+}
+
+.dorms-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.dorms-btn button {
+    color: #fff;
+    padding: 14px 80px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #b30738;
+    font-size: 1rem;
+}
+
+.dorms-card button:hover {
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.dorms-card:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1300px) {
+    .dorms-wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .dorms-wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+.modal-container {
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    visibility: hidden;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    opacity: 0;
+    transition: visibilty 0s, opacity 0.5s;
+}
+
+.modal-active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal {
+    position: relative;
+    background-color: #fff;
+    padding: 30px 50px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    width: 800px;
+    height: 700px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal h1 {
+    margin: 20px;
+}
+
