@@ -9,3 +9,9 @@ modalBtn.addEventListener('click', () => {
 modalClose.addEventListener('click', () => {
     modalBg.classList.remove('modal-active');
 });
+
+var data = ["Kian", "Matthew", "Eva"];
+ 
+var last = data.pop();
+var title = `${data.join(", ")} and ${last}`;
+document.getElementById('pageTitle').innerText = title;

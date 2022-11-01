@@ -17,7 +17,8 @@
 										you are now able to view college dorms<br>
 										in virtual reality with full control capabilities.
 			</p>
-			<button class="main-btn"><a href="#">View dorms</a></button>
+			<button class="main-btn">View dorms</a></button>
+			<!-- <a href="#"> -->
 		</div>
 	</div>
 
@@ -27,6 +28,7 @@
 		<div class="dorms-wrapper">
 			<div class="dorms-card">
 				<h2><b>Broccoli</b></h2>
+				<img src="swig.png" width="300" height="350">
 				<div class="dorms-btn"><button>Enter</button></div>
 			</div>
 			<div class="dorms-card">
@@ -66,12 +68,19 @@
 				allowfullscreen>
 			</iframe>
 			<button class="modal-close">
-				X
+				
 			</button>
 		</div>
 	</div>
 
+	<h1 id="pageTitle"></h1>
+	<div id="qunit"></div>
+    <div id="qunit-fixture"></div>
+    <div id="pageTitle"></div>
+    <script src="https://code.jquery.com/qunit/qunit-2.9.2.js"></script>
+
 	<script src="script.js"></script>
+	<script src="test/index_tests.js"></script>
 
 </body>
 </html>
