@@ -26,6 +26,10 @@ body {
     text-align: center;
     padding: 30px;
     margin-top: 150px;
+    background-image: url("./dorm_images/cover.png");
+    background-color: #fff;
+    background-position: center;
+    background-size: 110%;
 }
 
 .hero-heading {
@@ -35,11 +39,12 @@ body {
     font-style: italic;
     text-shadow: 2px 2px 4px #868686;
     color: #b30738;
+    font-weight: 800;
 }
 
 .hero-subtitle {
     font-size: 30px;
-    font-weight: bold;
+    font-weight: 800;
     font-style: italic;
     text-shadow: 2px 2px 4px #b6b6b6;
     color: black;
@@ -47,19 +52,20 @@ body {
 
 .hero-description {
     color: black;
-    font-weight: 500;
+    font-weight: 600;
     margin: 20px;
 }
 
 .main-btn {
     background-color: #b30738;
     border: 0;
-    border-radius: 5px;
+    border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     color: #fff;
     font-size: 14px;
     padding: 10px 25px;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {
@@ -99,23 +105,25 @@ body {
 
 .dorms h2 {
     color: black;
+    font-size: 20px;
     text-align: center;
 }
 
 .dorms-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
 }
 
 .dorms-card {
     margin: 10px;
-    height: 340px;
-    width: 300px;
+    height: 275px;
+    width: 225px;
     border-radius: 4px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     color: #000;
     background-color: white;
     transition: 0.3s ease-in;
@@ -124,17 +132,18 @@ body {
 .dorms-btn {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .dorms-btn button {
     color: #fff;
-    padding: 14px 80px;
+    padding: 8px 40px;
     border: none;
     outline: none;
-    border-radius: 4px;
+    border-radius: 10px;
     background: #b30738;
-    font-size: 1rem;
+    font-size: 0.9rem;
+    font-weight: 500;
 }
 
 .dorms-card button:hover {
@@ -198,6 +207,14 @@ body {
     right: 10px;
     font-weight: bold;
     cursor: pointer;
+    color: #fff;
+    padding: 8px 20px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #b30738;
+    font-size: 1rem;
+
 }
 
 .modal h1 {

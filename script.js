@@ -1,6 +1,7 @@
 const modalBtn = document.querySelector('.dorms-btn');
 const modalBg = document.querySelector('.modal-container');
 const modalClose = document.querySelector('.modal-close');
+const viewDormsBtn = document.getElementsByClassName('.main-btn');
 
 modalBtn.addEventListener('click', () => {
     modalBg.classList.add('modal-active');
@@ -9,9 +10,3 @@ modalBtn.addEventListener('click', () => {
 modalClose.addEventListener('click', () => {
     modalBg.classList.remove('modal-active');
 });
-
-var data = ["Kian", "Matthew", "Eva"];
- 
-var last = data.pop();
-var title = `${data.join(", ")} and ${last}`;
-document.getElementById('pageTitle').innerText = title;
