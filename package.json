@@ -11,6 +11,7 @@
     "globalyzer": "^0.1.0",
     "globrex": "^0.1.2",
     "node-watch": "^0.7.3",
+    "swiper": "^8.4.4",
     "tiny-glob": "^0.2.9"
   },
   "scripts": {
