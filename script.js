@@ -27,4 +27,3 @@ let base = (e) => {
 
 b.addEventListener("pointermove", base);
 
-
